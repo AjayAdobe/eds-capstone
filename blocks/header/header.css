@@ -192,7 +192,7 @@ header nav .nav-sections ul > li {
 header nav .nav-sections ul > li > a {
   padding: 20px;
 }
-header nav .nav-sections ul > li > a:hover {
+header nav .nav-sections ul > li > a:hover, header nav .nav-sections ul > li > a.active  {
   text-decoration: none;
   background: #ffea00;
 }
@@ -204,8 +204,26 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+.top-header{
+  background: var(--text-color);
+  padding: 2px 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-header a {
+  color: #fff;
+  font-size: 14px;
+}
+
 .search-icn  a.button{
   background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-shadow{
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,.26);
 }
 
 @media (width >= 900px) {

@@ -87,7 +87,7 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  height: 160px;
 }
 
 header .header,
@@ -269,6 +269,9 @@ main>.section:first-of-type {
   }
 }
 
+main>.section .magazine {
+  padding: 40px 0;
+}
 .magazine>div {
   gap: 0;
   background: #ebebeb;
@@ -279,9 +282,6 @@ main>.section:first-of-type {
   padding: 0;
 }
 
-.magazine>div>div:last-child {
-  padding: 30px;
-}
 
 .contributor h2 {
   font-weight: 300;
@@ -309,35 +309,20 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-.contributor-cards.cards>ul>li {
+.magzine-articles.cards > ul > li{
   border: 0;
-  display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.contributor-cards.cards>ul>li>.cards-card-image {
-  border-radius: 50%;
-  overflow: hidden;
-  height: 200px;
-  width: 200px;
-}
-.contributor-cards.cards .cards-card-body {
-  text-align: center;
-}
-.contributor-cards.cards .cards-card-body p {
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-}
-.contributor-cards.cards > ul > li img {
-  aspect-ratio: 3/3;
+.magzine-articles.cards .cards-card-body {
+  margin: 0;
 }
 
-.contributor-cards.cards .cards-card-body p a{
-  background: var(--text-color);
-  padding: 10px;
-  display: flex;
-  align-items: center;
+.magzine-articles.cards .cards-card-body h3 {
+  font-size: 18px;
+  text-transform: uppercase;
 }
- 
+
+.magzine-articles.cards .cards-card-body p {
+  font-size: 13px;
+  text-transform: uppercase;
+}
