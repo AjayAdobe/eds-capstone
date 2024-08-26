@@ -4,16 +4,17 @@
   align-items: center;
 }
 
-.social .button-container {
+.social{
   padding: 0;
   margin: 0;
 }
 
-.social .button-container  p{
+.social  p{
   margin: 0;
+  display: flex;
 }
 
-.social .button-container  a {
+.social  a {
   background: var(--text-color);
   padding:10px;
   margin:0;

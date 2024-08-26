@@ -4,6 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  transition: all 0.3s ease-in-out ;
 }
 
 header nav {
@@ -37,6 +38,7 @@ header nav[aria-expanded='true'] {
     gap: 0 32px;
     max-width: 1264px;
     padding: 0 32px;
+    transition: all 0.3s ease;
   }
 
   header nav[aria-expanded='true'] {
@@ -221,7 +223,9 @@ header nav .nav-sections ul > li > ul > li {
   margin: 0;
   padding: 0;
 }
-
+.scroll-shadow nav {
+  height: 70px;
+}
 .scroll-shadow{
   box-shadow: 0 8px 20px 0 rgba(0,0,0,.26);
 }

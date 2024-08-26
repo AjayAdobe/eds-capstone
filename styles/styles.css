@@ -87,7 +87,7 @@ body.appear {
 }
 
 header {
-  height: 160px;
+  height: 126px;
 }
 
 header .header,
@@ -307,22 +307,4 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
-}
-
-.magzine-articles.cards > ul > li{
-  border: 0;
-}
-
-.magzine-articles.cards .cards-card-body {
-  margin: 0;
-}
-
-.magzine-articles.cards .cards-card-body h3 {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.magzine-articles.cards .cards-card-body p {
-  font-size: 13px;
-  text-transform: uppercase;
 }
