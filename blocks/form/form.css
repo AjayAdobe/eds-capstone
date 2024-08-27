@@ -70,12 +70,10 @@ main .form .form-checkbox-wrapper {
 
 main .form .form-checkbox-wrapper input[type="checkbox"] {
   appearance: none;
-
-  /* stylelint-disable */
+/* stylelint-disable */
   -webkit-appearance: none;
   -moz-appearance: none;
-
-  /* stylelint-enable */
+/* stylelint-enable */
   height: 20px;
   width: 20px;
   position: relative;
@@ -120,17 +118,17 @@ main .form button {
   font-family: var(--body-font-family);
 }
 
-@media screen and (min-width: 900px) {
+@media (width >= 900px) {
   main .form {
-    padding: var(--spacing-ml);
+      padding: var(--spacing-ml);
   }
 
   main .form .field-wrapper {
-    display: flex;
+      display: flex;
   }
 
   main .form label {
-    width: 72%;
+      width: 72%;
   }
 }
 
@@ -152,9 +150,7 @@ main .form.registration-form {
   padding: 30px;
   max-width: 500px;
   margin: auto;
-  
 }
-
 
 main .form.registration-form  form {
   background-color: var(--text-color);
@@ -175,11 +171,11 @@ main .form.registration-form h3::after {
   margin: 20px 0 0;
 }
 
-main .form.registration-form input::placeholder{
+main .form.registration-form input::placeholder {
   font-size: 12px;
   text-transform: uppercase;
 }
 
-main .form .form-interets{
+main .form .form-interets {
   height: 100px;
 }
