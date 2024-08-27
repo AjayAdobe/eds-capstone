@@ -308,3 +308,9 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+main >.thank-you {
+  background: #efefef;
+  padding: 40px;
+  margin: 0;
+}
