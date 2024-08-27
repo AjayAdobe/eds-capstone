@@ -140,6 +140,7 @@ main .form button {
 main .form.registration-form input {
   border-color: #ebebeb;
   padding: 10px;
+  color: #fff;
 }
 
 .main .form .field-wrapper input {
