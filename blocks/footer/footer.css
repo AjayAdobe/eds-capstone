@@ -14,7 +14,11 @@ footer .footer p {
   margin: 0;
 }
 
-.top-footer>.default-content-wrapper {
+footer .footer-info > .default-content-wrapper > p {
+  margin: 0 0 20px;
+}
+
+.top-footer > .default-content-wrapper {
   display: flex;
   align-items: center;
   padding-bottom: 30px;
@@ -22,13 +26,13 @@ footer .footer p {
 }
 
 
-.top-footer>.default-content-wrapper>h2 {
+.top-footer > .default-content-wrapper > h2 {
   text-transform: uppercase;
   padding: 0;
   margin: 0 50px 0 0;
 }
 
-.top-footer>.default-content-wrapper a {
+.top-footer > .default-content-wrapper a {
   color: var(--footer-text-color);
   text-decoration: none;
   padding: 20px;
@@ -56,9 +60,7 @@ footer .footer p {
   margin-right: 20px;
 }
 
-footer .footer-info>.default-content-wrapper>p {
-  margin: 0 0 20px;
-}
+
 
 @media (width >=900px) {
   footer .footer>div {

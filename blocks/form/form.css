@@ -54,6 +54,10 @@ main .form label.required::after {
   padding-left: var(--spacing-xxxs);
 }
 
+.field-wrapper {
+  margin: 20px 0;
+}
+
 main .form .field-wrapper {
   margin-bottom: var(--spacing-m);
 }
@@ -135,8 +139,9 @@ main .form button {
   color: #000;
 }
 
-.field-wrapper {
-  margin: 20px 0;
+main .form.registration-form input {
+  border-color: #ebebeb;
+  padding: 10px;
 }
 
 .main .form .field-wrapper input {
@@ -160,6 +165,7 @@ main .form.registration-form  form {
 main .form.registration-form h3 {
   font-size: 24px;
 }
+
 main .form.registration-form h3::after {
   content: "";
   width: 50px;
@@ -169,14 +175,11 @@ main .form.registration-form h3::after {
   margin: 20px 0 0;
 }
 
-main .form.registration-form input {
-  border-color: #ebebeb;
-  padding: 10px;
-}
 main .form.registration-form input::placeholder{
   font-size: 12px;
   text-transform: uppercase;
 }
+
 main .form .form-interets{
   height: 100px;
 }

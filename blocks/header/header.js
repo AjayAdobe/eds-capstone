@@ -1,4 +1,4 @@
-import {fetchPlaceholders, getMetadata } from '../../scripts/aem.js';
+import { fetchPlaceholders, getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
@@ -108,7 +108,6 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
-
   const placeholders = await fetchPlaceholders();
   const { signUp, link } = placeholders;
 
@@ -117,8 +116,6 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
-
-  
   // register
   const topHeader = document.createElement('div');
   topHeader.classList.add('top-header');
@@ -127,7 +124,6 @@ export default async function decorate(block) {
   register.textContent = signUp;
   topHeader.appendChild(register);
 
-  
   // decorate nav DOM
   block.textContent = '';
   const nav = document.createElement('nav');
@@ -152,7 +148,6 @@ export default async function decorate(block) {
 
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-
       const anchor = navSection.querySelector('a');
       if (anchor && anchor.getAttribute('href') === currentUrl) {
         // Add active class if the current URL matches the anchor's href
@@ -170,7 +165,6 @@ export default async function decorate(block) {
     });
   }
 
-
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
@@ -186,21 +180,19 @@ export default async function decorate(block) {
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
-  navWrapper.append(topHeader)
+  navWrapper.append(topHeader);
   navWrapper.append(nav);
   block.append(navWrapper);
 
   // Add shadow on scroll
-     function handleScroll() {
-       if (window.scrollY > 0) {
-         navWrapper.classList.add('scroll-shadow');
-       } else {
-         navWrapper.classList.remove('scroll-shadow');
-       }
-     }
-     window.addEventListener('scroll', handleScroll);
-     // Initial check in case the page is already scrolled
-     handleScroll();
-   
- 
+  function handleScroll() {
+    if (window.scrollY > 0) {
+      navWrapper.classList.add('scroll-shadow');
+    } else {
+      navWrapper.classList.remove('scroll-shadow');
+    }
+  }
+  window.addEventListener('scroll', handleScroll);
+  // Initial check in case the page is already scrolled
+  handleScroll();
 }

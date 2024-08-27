@@ -253,6 +253,15 @@ main>.section {
   margin: 40px 0;
 }
 
+.magazine>div {
+  gap: 0;
+  background: #ebebeb;
+}
+
+main>.section .magazine {
+  padding: 40px 0;
+}
+
 main>.section>div {
   max-width: 1200px;
   margin: auto;
@@ -269,19 +278,10 @@ main>.section:first-of-type {
   }
 }
 
-main>.section .magazine {
-  padding: 40px 0;
-}
-.magazine>div {
-  gap: 0;
-  background: #ebebeb;
-}
-
 .magazine .columns-img-col {
   flex: 1.7;
   padding: 0;
 }
-
 
 .contributor h2 {
   font-weight: 300;
