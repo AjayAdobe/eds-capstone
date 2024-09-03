@@ -3,25 +3,22 @@ export default async function decorate(block) {
   async function loadArticles() {
     const resp = await fetch(articleLists.href);
     const json = await resp.json();
-    json.data.forEach((row) => {
+    // eslint-disable-next-line no-return-assign
+    const magazineItems = json.data.filter((value) => value.template === 'magazine');
+    magazineItems.forEach((row) => {
       // Null checks for required fields
-      if (row.url && row.image && row.name && row.description) {
+      if (row.path && row.image && row.title && row.description) {
         // Create the elements
         const articleDiv = document.createElement('div');
         articleDiv.classList.add('article-item');
         articleDiv.innerHTML = `
-          <a href="${row.url}">
-              <img src="${row.image}" alt="${row.name}">
-              <h3>${row.name}</h3>
+          <a href="${row.path}">
+              <img src="${row.image}" alt="${row.title}">
+              <h3>${row.title}</h3>
           </a>
           <p>${row.description}</p>
         `;
         block.appendChild(articleDiv);
-      } else {
-        const errorDiv = document.createElement('div');
-        errorDiv.classList.add('error-message');
-        errorDiv.textContent = 'Something Went Wrong';
-        block.appendChild(errorDiv);
       }
     });
   }
