@@ -8,7 +8,7 @@
   display: none;
 }
 
-.article-item h3 {
+.article-item a :where(h1, h2, h3, h4, h5, h6) {
   text-decoration: none;
   font-size: 18px;
   color: var(--text-color);
