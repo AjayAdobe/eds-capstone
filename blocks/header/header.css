@@ -319,3 +319,19 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+
+@media (width <= 600px) { 
+  header {
+    height: 100px;
+  }
+
+  header nav .nav-brand a {
+    font-size: 24px;
+  }
+  
+  header nav {
+    height: 60px;
+    padding: 10px 20px;
+  }
+}

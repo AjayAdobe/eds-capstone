@@ -97,7 +97,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  z-index: 10;
+  z-index: 1;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
@@ -162,3 +162,9 @@ main > .section > div.carousel-wrapper {
   }
 }
 
+@media (width <= 600px) {
+  .carousel .carousel-slide .carousel-slide-content {
+    margin: 50px 10px 0;
+  }
+
+}

@@ -314,3 +314,17 @@ main >.thank-you {
   padding: 40px;
   margin: 0;
 }
+
+
+@media (width <= 1024px) {
+  :root{
+    --nav-height: 80px;
+  }
+}
+
+
+@media (width <= 600px) {
+  :root{
+    --nav-height: 46px;
+  }
+}

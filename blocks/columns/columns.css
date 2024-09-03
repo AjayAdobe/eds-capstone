@@ -31,3 +31,15 @@
     order: unset;
   }
 }
+
+@media (width <= 600px) {
+  .columns > div > .columns-img-col + div {
+    padding: 10px ;
+  }
+}
+
+@media (width <= 920px) {
+  .columns > div > .columns-img-col + div {
+    padding: 10px ;
+  }
+}
