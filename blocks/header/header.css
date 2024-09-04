@@ -374,7 +374,7 @@ header nav .nav-tools {
   header nav .nav-sections ul > li > a {
     display: block;
     padding: 15px 25px;
-    border-bottom:1px solid #fefeff ;
+    border-bottom:1px solid #6f6969;
   }
 
   header nav .nav-sections ul > li > a.active {
