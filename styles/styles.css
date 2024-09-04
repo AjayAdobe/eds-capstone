@@ -86,10 +86,6 @@ body.appear {
   display: block;
 }
 
-header {
-  height: 126px;
-}
-
 header .header,
 footer .footer {
   visibility: hidden;
@@ -159,6 +155,14 @@ pre {
   background-color: var(--light-color);
   overflow-x: auto;
   white-space: pre;
+}
+
+main {
+  padding: 110px 0 0;
+}
+
+main.header-padding {
+  padding: 100px 0 0;
 }
 
 main>div {
@@ -273,9 +277,17 @@ main>.section:first-of-type {
 }
 
 @media (width >=900px) {
+  main {
+    padding: 126px 0 0;
+  }
+
+  main.header-padding {
+    padding: 96px 0 0;
+  }
+  
   main>.section>div {
     padding: 0 32px;
-  }
+  } 
 }
 
 .magazine .columns-img-col {

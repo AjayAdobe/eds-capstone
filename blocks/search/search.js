@@ -6,12 +6,13 @@ export default async function decorate(block) {
 
   function handleSearch(value) {
     const baseUrl = inputLink;
-    const searchURL = `${baseUrl}?q=${encodeURIComponent(value)}`;
+    const searchURL = `${baseUrl}?q=${value}`;
     window.open(searchURL, '_blank');
   }
 
   const inputField = document.createElement('input');
   inputField.classList.add('input-field');
+  inputField.setAttribute('type', 'search');
   inputField.setAttribute('placeholder', inputPlaceholder);
   inputField.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
